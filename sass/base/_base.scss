@@ -36,16 +36,16 @@ body {
   color: $clr-white;
   line-height: 1.5;
   min-height: 100vh;
-  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 
   @include respond(tab-port) {
-    background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
+    background-image: url(../img/home/background-home-tablet.jpg);
   }
 
   @include respond(phone) {
-    background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
+    background-image: url(../img/home/background-home-mobile.jpg);
     overflow: hidden;
   }
 }

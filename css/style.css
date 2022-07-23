@@ -147,15 +147,15 @@ body {
   color: white;
   line-height: 1.5;
   min-height: 100vh;
-  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
   @media only screen and (max-width: 56.25em) {
     body {
-      background-image: url(../starter-code/assets/home/background-home-tablet.jpg); } }
+      background-image: url(../img/home/background-home-tablet.jpg); } }
   @media only screen and (max-width: 37.5em) {
     body {
-      background-image: url(../starter-code/assets/home/background-home-mobile.jpg);
+      background-image: url(../img/home/background-home-mobile.jpg);
       overflow: hidden; } }
 
 img,
