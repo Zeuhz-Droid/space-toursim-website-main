@@ -1,0 +1,27 @@
+.btn {
+  appearance: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  &--explore {
+    height: 27.4rem;
+    width: 27.4rem;
+    border-radius: 50%;
+    background-color: $clr-white;
+    position: relative;
+  }
+
+  &--ripple {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba($clr-white, 0.5);
+    position: absolute;
+    z-index: -1;
+  }
+
+  &--explore:hover &--ripple {
+    animation: ripple 0.8s ease-in-out infinite;
+  }
+}
