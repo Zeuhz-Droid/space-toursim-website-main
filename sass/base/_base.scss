@@ -9,12 +9,68 @@
 html {
   font-size: 62.5%; // 1rem = 10px
   box-sizing: border-box;
+
+  @include respond(tab-land) {
+    //is width < 1200px?
+    font-size: 56.25%; //1rem = 9px (9/16) = 56.25%
+  }
+
+  @include respond(tab-port) {
+    //is width < 900px?
+    font-size: 54.69%; //1rem = 8px (8/16) = 50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px (12/16) = 75%
+  }
 }
 
-// body {
-//     font-family: ;
-//     font-size: 1.6rem;
-//     color: ;
-//     line-height: 1.9;
-//     background-color: ;
-// }
+body {
+  font-family: $ff-sans-normal;
+  font-size: 1.8rem;
+  color: $clr-white;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+  background-size: cover;
+
+  @include respond(tab-port) {
+    background-image: url(../starter-code/assets/home/background-home-tablet.jpg);
+  }
+}
+
+// MAKE IMAGES EASIER TO WORK WITH
+img,
+picture {
+  max-width: 100%;
+}
+
+// MAKE FORMS EASIER TO WORK WITH
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container {
+  max-width: 85vw;
+  margin-inline: auto;
+  padding-inline: 2em;
+}
+
+#current {
+  border-bottom: 0.2em solid $clr-white;
+}
