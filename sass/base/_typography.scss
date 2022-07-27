@@ -23,10 +23,10 @@
   font-size: 15rem;
   line-height: 17.2rem;
 
-  // @include respond(phone) {
-  //   font-size: 13rem;
-  //   line-height: 10.2rem;
-  // }
+  @include respond(phone) {
+    font-size: 13rem;
+    line-height: 10.2rem;
+  }
 }
 
 .heading--2 {
