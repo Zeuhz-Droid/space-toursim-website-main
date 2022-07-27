@@ -17,6 +17,7 @@
 
   @include respond(phone) {
     align-items: flex-start;
+    padding-left: 1rem;
   }
 
   &__logo {
