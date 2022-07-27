@@ -1,0 +1,168 @@
+#crew-header {
+  height: 100vh;
+  background-image: url(../img/crew/background-crew-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  @include respond(tab-port) {
+    background-image: url(../img/crew/background-crew-tablet.jpg);
+    height: max-content;
+    padding-bottom: 2em;
+  }
+
+  @include respond(phone) {
+    height: max-content;
+    background-image: url(../img/crew/background-crew-mobile.jpg);
+  }
+}
+
+.crew {
+  width: 80vw;
+  margin-inline: auto;
+
+  @include respond(tab-port) {
+    margin-top: 15rem;
+  }
+
+  h5 {
+    display: inline-block;
+    margin: 1rem 0;
+
+    @include respond(phone) {
+      display: block;
+      margin: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__details {
+    @include grid;
+    gap: 5rem;
+    align-items: flex-end;
+    grid-template-rows: 1fr;
+    align-self: flex-start;
+    position: relative;
+
+    @include respond(tab-port) {
+      text-align: center;
+      gap: 0rem;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    width: 105%;
+    height: 45rem;
+    position: relative;
+    overflow: hidden;
+
+    @include respond(tab-port) {
+      height: 40rem;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__slide {
+    width: 100%;
+    height: 30rem;
+    display: grid;
+    gap: 2rem;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transition: all 0.4s;
+
+    @include respond(tab-port) {
+      margin-top: 5rem;
+      height: 20rem;
+    }
+
+    .heading--3 {
+      width: 150%;
+
+      @include respond(tab-port) {
+        width: 100%;
+      }
+    }
+
+    .plain--text {
+      width: 70%;
+
+      @include respond(tab-port) {
+        width: 80%;
+        margin-inline: auto;
+      }
+    }
+  }
+
+  &__dots {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+
+    @include respond(tab-port) {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @include respond(phone) {
+      top: 0;
+      height: max-content;
+    }
+
+    &--dot {
+      border: none;
+      width: 1.5rem;
+      height: 1.5rem;
+      cursor: pointer;
+      margin-right: 1.75rem;
+      border-radius: 50%;
+      background-color: rgba($clr-white, 0.4);
+
+      transition: all 0.5s;
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+
+    &--active {
+      background-color: $clr-white;
+    }
+  }
+
+  &__image {
+    width: 56.81rem;
+    height: 65.2rem;
+
+    @include respond(tab-port) {
+      justify-self: center;
+    }
+
+    @include respond(phone) {
+      height: 40rem;
+      width: 100%;
+      order: -1;
+      border-bottom: 1px solid rgba($clr-light, 0.2);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background-position: bottom;
+    }
+  }
+}

@@ -1,15 +1,15 @@
-@import "abstract/functions";
-@import "abstract/mixins";
-@import "abstract/variables";
+@import 'abstract/mixins';
+@import 'abstract/variables';
 
-@import "base/utilities";
-@import "base/animations";
-@import "base/typography";
-@import "base/base";
+@import 'base/utilities';
+@import 'base/animations';
+@import 'base/typography';
+@import 'base/base';
 
-@import "pages/crew";
-@import "pages/destination";
-@import "pages/home";
-@import "pages/technology";
+@import 'components/buttons';
+@import 'components/navigation';
 
-@import "components/buttons";
+@import 'pages/crew';
+@import 'pages/destination';
+@import 'pages/home';
+@import 'pages/technology';

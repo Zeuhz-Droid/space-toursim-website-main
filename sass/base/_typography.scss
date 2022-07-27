@@ -16,11 +16,17 @@
   font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
+  color: $clr-light;
 }
 
 .heading--1 {
   font-size: 15rem;
   line-height: 17.2rem;
+
+  // @include respond(phone) {
+  //   font-size: 13rem;
+  //   line-height: 10.2rem;
+  // }
 }
 
 .heading--2 {
@@ -31,16 +37,26 @@
 .heading--3 {
   font-size: 5.6rem;
   line-height: 6.4rem;
+
+  @include respond(phone) {
+    font-size: 4.6rem;
+    line-height: 4.4rem;
+  }
 }
 
 .heading--4 {
   font-size: 3.2rem;
   line-height: 3.7rem;
+  color: rgba($clr-white, 0.4);
 }
 
 .heading--5 {
   font-size: 2.8rem;
   letter-spacing: 0.472rem;
+
+  // @include respond(phone) {
+  //   font-size: 2.3rem;
+  // }
 }
 
 .subheading--1 {

@@ -35,3 +35,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.hide {
+  display: none !important;
+}
+
+.heading--number {
+  color: rgba($clr-white, 0.4);
+  margin-right: 2rem;
+}
