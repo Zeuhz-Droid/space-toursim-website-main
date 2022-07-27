@@ -48,6 +48,8 @@ Required making it possible for users to be able to:
 
 ### What I learned
 
+My approach was a little bit different, I think. Front-end mentor had provided about 15 html files to be used for coding and all, but I decided to not only use sass for this project but also use four (4) html files, one for each of the navigation links. My code was sectioned into different aspects as this is the importance and function of sass;
+
 1. I learned or rather practiced and updated my sass markup/codes.
 2. setting up the package.json file to support sass and the whole build process.
 3. In javascript, I learnt and implemented event delegation _Code appended Below_, as well as the function scope.
