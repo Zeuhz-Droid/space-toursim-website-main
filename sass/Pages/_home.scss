@@ -3,6 +3,7 @@
   background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  overflow: hidden;
 
   @include respond(tab-port) {
     background-image: url(../img/home/background-home-tablet.jpg);
@@ -44,5 +45,10 @@
     @include respond(phone) {
       width: 100%;
     }
+  }
+
+  &__btn {
+    justify-content: flex-end;
+    align-items: flex-end;
   }
 }

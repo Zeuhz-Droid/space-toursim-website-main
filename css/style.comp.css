@@ -217,6 +217,7 @@ select {
     position: relative;
     z-index: 9; }
   .btn--ripple {
+    display: inline-block;
     height: 100%;
     width: 100%;
     border-radius: 50%;
@@ -607,7 +608,8 @@ select {
   height: 100vh;
   background-image: url(../img/home/background-home-desktop.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
   @media only screen and (max-width: 56.25em) {
     #main-header {
       background-image: url(../img/home/background-home-tablet.jpg);
@@ -642,6 +644,9 @@ select {
     @media only screen and (max-width: 37.5em) {
       .space__travel {
         width: 100%; } }
+  .space__btn {
+    justify-content: flex-end;
+    align-items: flex-end; }
 
 #technology-header {
   height: 100vh;
