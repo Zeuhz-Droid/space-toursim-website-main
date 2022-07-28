@@ -48,7 +48,7 @@ Required making it possible for users to be able to:
 
 ### What I learned
 
-My approach was a little bit different, I think. Front-end mentor had provided about 15 html files to be used for coding and all, but I decided to not only use sass for this project but also use four (4) html files, one for each of the navigation links. My code was sectioned into different aspects as this is the importance and function of sass;
+My approach was a little bit different, I think. Front-end mentor had provided about 15 html files to be used for implementing the entirety of this project, but I decided to not only use sass _(NOTE: Sass is probably an overstretch for just the header of a website but this was used on a personal need to recall sass terminologies and syntax)_, but also use four (4) html files, one for each of the navigation links the home, destination, crew and technology link. My code was sectioned into different aspects as this is the importance and function of sass;
 
 1. I learned or rather practiced and updated my sass markup/codes.
 2. setting up the package.json file to support sass and the whole build process.
@@ -125,7 +125,7 @@ Right now, my main and continual focus is javascript and my next project will be
 
 - Website - [Zeuhz Droid](comingSoon...)
 - Frontend Mentor - [@Zeuhz-Droid](https://www.frontendmentor.io/profile/Zeuhz-Droid)
-- Twitter - [@yourusername](https://twitter.com/zeuhzDroid)
+- Twitter - [@zeuhzDroid](https://twitter.com/zeuhzDroid)
 
 ## Acknowledgments
 
