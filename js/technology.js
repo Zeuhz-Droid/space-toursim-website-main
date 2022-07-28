@@ -118,7 +118,7 @@ const slider = function () {
 
   //   IMPLEMENTING ARROW UP AND DOWN
   document.body.addEventListener('keydown', function (e) {
-    if (e.key === 'ArrowDown') {
+    if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
       nextSlide();
       technologyBtns.forEach(btn => {
         if (btn.classList.contains('technology__btns--active')) {
@@ -128,7 +128,7 @@ const slider = function () {
         }
       });
     }
-    if (e.key === 'ArrowUp') {
+    if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
       prevSlide();
       technologyBtns.forEach(btn => {
         if (btn.classList.contains('technology__btns--active')) {
