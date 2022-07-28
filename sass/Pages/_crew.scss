@@ -32,6 +32,11 @@
   h5 {
     display: inline-block;
     margin: 1rem 0;
+    transform: translateY(5rem);
+
+    @include respond(tab-port) {
+      transform: translateY(0rem);
+    }
 
     @include respond(phone) {
       display: block;
@@ -56,7 +61,7 @@
 
   &__slider {
     display: flex;
-    width: 105%;
+    width: 110%;
     height: 45rem;
     position: relative;
     overflow: hidden;

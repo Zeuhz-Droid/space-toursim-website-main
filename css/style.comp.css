@@ -410,7 +410,11 @@ select {
       margin-top: 15rem; } }
   .crew h5 {
     display: inline-block;
-    margin: 1rem 0; }
+    margin: 1rem 0;
+    transform: translateY(5rem); }
+    @media only screen and (max-width: 56.25em) {
+      .crew h5 {
+        transform: translateY(0rem); } }
     @media only screen and (max-width: 37.5em) {
       .crew h5 {
         display: block;
@@ -430,7 +434,7 @@ select {
         gap: 0rem; } }
   .crew__slider {
     display: flex;
-    width: 105%;
+    width: 110%;
     height: 45rem;
     position: relative;
     overflow: hidden; }
