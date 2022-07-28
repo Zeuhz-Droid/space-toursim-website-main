@@ -342,7 +342,7 @@ select {
     padding: 2.8em 0;
     text-decoration: none;
     text-transform: uppercase;
-    color: #d0d6f9;
+    color: rgba(208, 214, 249, 0.5);
     transition: all 0.4s; }
     @media only screen and (max-width: 56.25em) {
       .nav__link:link, .nav__link:visited {
@@ -656,7 +656,7 @@ select {
   @media only screen and (max-width: 37.5em) {
     .space {
       align-items: flex-start;
-      padding-top: 5rem;
+      padding-top: 10rem;
       gap: 10rem; } }
   .space__travel {
     margin-top: 10vh;
