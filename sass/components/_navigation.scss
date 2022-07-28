@@ -140,7 +140,7 @@
     padding: 2.8em 0;
     text-decoration: none;
     text-transform: uppercase;
-    color: $clr-light;
+    color: rgba($clr-light, 0.5);
     transition: all 0.4s;
 
     @include respond(tab-port) {
